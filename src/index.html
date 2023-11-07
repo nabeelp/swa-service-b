@@ -8,6 +8,19 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
-</body>
+  <h1>Static Web Apps Database Connections</h1>
+  <blockquote>
+      Open the console in the browser developer tools to see the API responses.
+  </blockquote>
+  <div>
+      <button id="list" onclick="list()">List</button>
+  </div>
+  <script>
+async function list() {
+  const endpoint = '/data-api/rest/Table1';
+  const response = await fetch(endpoint);
+  const data = await response.json();
+  console.table(data.value);
+}
+  </script></body>
 </html>
