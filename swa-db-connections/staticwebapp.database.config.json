@@ -29,8 +29,8 @@
     }
   },
   "entities": {
-    "TableB1": {
-      "source": "TableB1",
+    "tableb1": {
+      "source": "tableb1",
       "permissions": [
         {
           "actions": ["*"],
